@@ -19,3 +19,22 @@ spec:
         image: newair007/udagram-api-feed
         ports:
         - containerPort: 80
+        env:
+          - name: POSTGRES_USERNAME
+            value: "postgres"
+          - name: POSTGRES_PASSWORD
+            value: ""
+          - name: POSTGRES_DB
+            value: "postgres"
+          - name: POSTGRES_HOST
+            value: "udacity-monolith.cffyih2b8zti.us-east-1.rds.amazonaws.com"
+          - name: aws_region
+            value: "postgres"
+          - name: AWS_PROFILE
+            value: ""
+          - name: AWS_BUCKET
+            value: "postgres"
+          - name: JWT_SECRET
+            value: ""
+          - name: PORT
+            value: "8081"
